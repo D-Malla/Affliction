@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "name": "AfflictionEditor Editor Win64 Development (Affliction)",
+            "intelliSenseMode": "msvc-x64",
+            "compileCommands": "C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\.vscode\\compileCommands_Affliction.json",
+            "cStandard": "c17",
+            "cppStandard": "c++17"
+        },
+        {
+            "name": "Win32",
+            "intelliSenseMode": "msvc-x64",
+            "compileCommands": "C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\.vscode\\compileCommands_Default.json",
+            "cStandard": "c17",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}

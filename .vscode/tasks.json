@@ -1,0 +1,707 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Affliction Win64 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Affliction",
+				"Win64",
+				"Debug",
+				"C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Affliction.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"label": "Affliction Win64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Affliction",
+				"Win64",
+				"Debug",
+				"C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Affliction.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Affliction Win64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"label": "Affliction Win64 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Affliction",
+				"Win64",
+				"Debug",
+				"C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Affliction.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"label": "Affliction Win64 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Affliction",
+				"Win64",
+				"DebugGame",
+				"C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Affliction.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"label": "Affliction Win64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Affliction",
+				"Win64",
+				"DebugGame",
+				"C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Affliction.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Affliction Win64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"label": "Affliction Win64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Affliction",
+				"Win64",
+				"DebugGame",
+				"C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Affliction.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"label": "Affliction Win64 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Affliction",
+				"Win64",
+				"Development",
+				"C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Affliction.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"label": "Affliction Win64 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Affliction",
+				"Win64",
+				"Development",
+				"C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Affliction.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Affliction Win64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"label": "Affliction Win64 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Affliction",
+				"Win64",
+				"Development",
+				"C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Affliction.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"label": "Affliction Win64 Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Affliction",
+				"Win64",
+				"Test",
+				"C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Affliction.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"label": "Affliction Win64 Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Affliction",
+				"Win64",
+				"Test",
+				"C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Affliction.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Affliction Win64 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"label": "Affliction Win64 Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Affliction",
+				"Win64",
+				"Test",
+				"C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Affliction.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"label": "Affliction Win64 Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Affliction",
+				"Win64",
+				"Shipping",
+				"C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Affliction.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"label": "Affliction Win64 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Affliction",
+				"Win64",
+				"Shipping",
+				"C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Affliction.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Affliction Win64 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"label": "Affliction Win64 Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Affliction",
+				"Win64",
+				"Shipping",
+				"C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Affliction.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"label": "Affliction IOS Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Affliction",
+				"IOS",
+				"Debug",
+				"C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Affliction.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"label": "Affliction IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Affliction",
+				"IOS",
+				"Debug",
+				"C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Affliction.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Affliction IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"label": "Affliction IOS Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Affliction",
+				"IOS",
+				"Debug",
+				"C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Affliction.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"label": "Affliction IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Affliction",
+				"IOS",
+				"DebugGame",
+				"C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Affliction.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"label": "Affliction IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Affliction",
+				"IOS",
+				"DebugGame",
+				"C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Affliction.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Affliction IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"label": "Affliction IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Affliction",
+				"IOS",
+				"DebugGame",
+				"C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Affliction.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"label": "Affliction IOS Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Affliction",
+				"IOS",
+				"Development",
+				"C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Affliction.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"label": "Affliction IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Affliction",
+				"IOS",
+				"Development",
+				"C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Affliction.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Affliction IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"label": "Affliction IOS Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Affliction",
+				"IOS",
+				"Development",
+				"C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Affliction.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"label": "Affliction IOS Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Affliction",
+				"IOS",
+				"Test",
+				"C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Affliction.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"label": "Affliction IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Affliction",
+				"IOS",
+				"Test",
+				"C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Affliction.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Affliction IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"label": "Affliction IOS Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Affliction",
+				"IOS",
+				"Test",
+				"C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Affliction.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"label": "Affliction IOS Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Affliction",
+				"IOS",
+				"Shipping",
+				"C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Affliction.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"label": "Affliction IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"Affliction",
+				"IOS",
+				"Shipping",
+				"C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Affliction.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Affliction IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"label": "Affliction IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"Affliction",
+				"IOS",
+				"Shipping",
+				"C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Affliction.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"label": "AfflictionEditor Win64 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"AfflictionEditor",
+				"Win64",
+				"Debug",
+				"C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Affliction.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"label": "AfflictionEditor Win64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"AfflictionEditor",
+				"Win64",
+				"Debug",
+				"C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Affliction.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"AfflictionEditor Win64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"label": "AfflictionEditor Win64 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"AfflictionEditor",
+				"Win64",
+				"Debug",
+				"C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Affliction.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"label": "AfflictionEditor Win64 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"AfflictionEditor",
+				"Win64",
+				"DebugGame",
+				"C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Affliction.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"label": "AfflictionEditor Win64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"AfflictionEditor",
+				"Win64",
+				"DebugGame",
+				"C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Affliction.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"AfflictionEditor Win64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"label": "AfflictionEditor Win64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"AfflictionEditor",
+				"Win64",
+				"DebugGame",
+				"C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Affliction.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"label": "AfflictionEditor Win64 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"AfflictionEditor",
+				"Win64",
+				"Development",
+				"C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Affliction.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"label": "AfflictionEditor Win64 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"AfflictionEditor",
+				"Win64",
+				"Development",
+				"C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Affliction.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"AfflictionEditor Win64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"label": "AfflictionEditor Win64 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"AfflictionEditor",
+				"Win64",
+				"Development",
+				"C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Affliction.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		}
+	]
+}
