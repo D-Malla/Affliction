@@ -35,6 +35,20 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Components")
 	UCameraComponent* Camera;
 
+	// Amount of Health the MainPlayer currently has
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Health")
+	float PlayerHealth;
+
+	UFUNCTION()
+	void StartDamage();
+	UFUNCTION()
+	void TakeDamage(float DamageAmount);
+
+	UFUNCTION()
+	void StartHealing();
+	UFUNCTION()
+	void Heal(float HealAmount);
+
 private:
 
 	// Forwards/backwards movement

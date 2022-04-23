@@ -21,6 +21,7 @@ AMainPlayer::AMainPlayer()
 	SpringArm->SetupAttachment(RootComponent);
 	Camera->SetupAttachment(SpringArm);
 
+	PlayerHealth = 1.f;
 }
 
 // Called when the game starts or when spawned
@@ -42,16 +43,19 @@ void AMainPlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
-	PlayerInputComponent->BindAxis("MoveForward",this, &AMainPlayer::MoveForward);
-	PlayerInputComponent->BindAxis("MoveRight", this, &AMainPlayer::MoveRight);
-	PlayerInputComponent->BindAxis("Turn", this, &APawn::AddControllerYawInput);
-	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
-	PlayerInputComponent->BindAction("Jump",IE_Pressed,this, &ACharacter::Jump);
-	PlayerInputComponent->BindAction("Jump",IE_Released,this, &ACharacter::StopJumping);
-	PlayerInputComponent->BindAction("Crouch",IE_Pressed,this,&AMainPlayer::BeginCrouch);
-	PlayerInputComponent->BindAction("Crouch",IE_Released,this,&AMainPlayer::EndCrouch);
-	PlayerInputComponent->BindAction("Sprint",IE_Pressed,this, &AMainPlayer::BeginSprint);
-	PlayerInputComponent->BindAction("Sprint",IE_Released,this, &AMainPlayer::EndSprint);
+	PlayerInputComponent->BindAxis(TEXT("MoveForward"), this, &AMainPlayer::MoveForward);
+	PlayerInputComponent->BindAxis(TEXT("MoveRight"), this, &AMainPlayer::MoveRight);
+	PlayerInputComponent->BindAxis(TEXT("Turn"), this, &APawn::AddControllerYawInput);
+	PlayerInputComponent->BindAxis(TEXT("LookUp"), this, &APawn::AddControllerPitchInput);
+	PlayerInputComponent->BindAction(TEXT("Jump"), IE_Pressed, this, &ACharacter::Jump);
+	PlayerInputComponent->BindAction(TEXT("Jump"), IE_Released, this, &ACharacter::StopJumping);
+	PlayerInputComponent->BindAction(TEXT("Crouch"), IE_Pressed, this, &AMainPlayer::BeginCrouch);
+	PlayerInputComponent->BindAction(TEXT("Crouch"), IE_Released, this, &AMainPlayer::EndCrouch);
+	PlayerInputComponent->BindAction(TEXT("Sprint"), IE_Pressed, this, &AMainPlayer::BeginSprint);
+	PlayerInputComponent->BindAction(TEXT("Sprint"), IE_Released, this, &AMainPlayer::EndSprint);
+
+	PlayerInputComponent->BindAction(TEXT("Heal"), IE_Pressed, this, &AMainPlayer::StartHealing);
+	PlayerInputComponent->BindAction(TEXT("Damage"), IE_Pressed, this, &AMainPlayer::StartDamage);
 }
 
 void AMainPlayer::MoveForward(float AxisValue) 
@@ -103,4 +107,40 @@ void AMainPlayer::EndCrouch()
 {
   UnCrouch();
 	GetCharacterMovement()->GetNavAgentPropertiesRef().bCanCrouch = true;
+}
+
+// Healing/Damage
+
+void AMainPlayer::StartDamage() 
+{
+	TakeDamage(0.02f);
+}
+
+void AMainPlayer::TakeDamage(float DamageAmount) 
+{
+	UE_LOG(LogTemp, Warning, TEXT("We are taking Damage for %f points."), DamageAmount);
+	PlayerHealth -= DamageAmount;
+	UE_LOG(LogTemp, Warning, TEXT("Health: %f"), PlayerHealth);
+	
+	if (PlayerHealth < 0.f)
+	{
+		PlayerHealth = 0.f;
+	}
+}
+
+void AMainPlayer::StartHealing() 
+{
+	Heal(0.02f);
+}
+
+void AMainPlayer::Heal(float HealAmount) 
+{
+	UE_LOG(LogTemp, Warning, TEXT("We are Healing for %f points."), HealAmount);
+	PlayerHealth += HealAmount;
+	UE_LOG(LogTemp, Warning, TEXT("Health: %f"), PlayerHealth);
+
+	if (PlayerHealth > 1.f)
+	{
+		PlayerHealth = 1.f;
+	}
 }
