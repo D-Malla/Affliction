@@ -25,42 +25,37 @@
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
 	},
 	{
-		"file": "C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Source\\Affliction\\Game\\Health\\HealthComponent.cpp",
-		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\.vscode\\compileCommands_Default\\Affliction.211.rsp",
-		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
-	},
-	{
-		"file": "C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Source\\Affliction\\Game\\Health\\HealthComponent.h",
-		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\.vscode\\compileCommands_Default\\Affliction.211.rsp",
-		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
-	},
-	{
-		"file": "C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Source\\Affliction\\Game\\Items\\Potions\\HealthPotion.cpp",
-		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\.vscode\\compileCommands_Default\\Affliction.211.rsp",
-		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
-	},
-	{
-		"file": "C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Source\\Affliction\\Game\\Items\\Potions\\HealthPotion.h",
-		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\.vscode\\compileCommands_Default\\Affliction.211.rsp",
-		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
-	},
-	{
-		"file": "C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Source\\Affliction\\Game\\Items\\Potions\\PotionBase.cpp",
-		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\.vscode\\compileCommands_Default\\Affliction.211.rsp",
-		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
-	},
-	{
-		"file": "C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Source\\Affliction\\Game\\Items\\Potions\\PotionBase.h",
-		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\.vscode\\compileCommands_Default\\Affliction.211.rsp",
-		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
-	},
-	{
 		"file": "C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Source\\Affliction\\Game\\MainPlayer\\MainPlayer.cpp",
 		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\.vscode\\compileCommands_Default\\Affliction.211.rsp",
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
 	},
 	{
 		"file": "C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Source\\Affliction\\Game\\MainPlayer\\MainPlayer.h",
+		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\.vscode\\compileCommands_Default\\Affliction.211.rsp",
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Source\\Affliction\\TP_ThirdPerson\\TP_ThirdPerson.h",
+		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\.vscode\\compileCommands_Default\\Affliction.211.rsp",
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Source\\Affliction\\TP_ThirdPerson\\TP_ThirdPersonCharacter.cpp",
+		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\.vscode\\compileCommands_Default\\Affliction.211.rsp",
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Source\\Affliction\\TP_ThirdPerson\\TP_ThirdPersonCharacter.h",
+		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\.vscode\\compileCommands_Default\\Affliction.211.rsp",
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Source\\Affliction\\TP_ThirdPerson\\TP_ThirdPersonGameMode.cpp",
+		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\.vscode\\compileCommands_Default\\Affliction.211.rsp",
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\Source\\Affliction\\TP_ThirdPerson\\TP_ThirdPersonGameMode.h",
 		"command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @C:\\Users\\Dmall\\OneDrive\\Desktop\\Affliction\\.vscode\\compileCommands_Default\\Affliction.211.rsp",
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
 	}

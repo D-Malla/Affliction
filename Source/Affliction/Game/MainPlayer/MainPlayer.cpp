@@ -21,7 +21,9 @@ AMainPlayer::AMainPlayer()
 	SpringArm->SetupAttachment(RootComponent);
 	Camera->SetupAttachment(SpringArm);
 
+	// Set default player variables
 	PlayerHealth = 1.f;
+	bHasPunched = false;
 }
 
 // Called when the game starts or when spawned
@@ -43,6 +45,7 @@ void AMainPlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
+	// Player movment input
 	PlayerInputComponent->BindAxis(TEXT("MoveForward"), this, &AMainPlayer::MoveForward);
 	PlayerInputComponent->BindAxis(TEXT("MoveRight"), this, &AMainPlayer::MoveRight);
 	PlayerInputComponent->BindAxis(TEXT("Turn"), this, &APawn::AddControllerYawInput);
@@ -54,8 +57,12 @@ void AMainPlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 	PlayerInputComponent->BindAction(TEXT("Sprint"), IE_Pressed, this, &AMainPlayer::BeginSprint);
 	PlayerInputComponent->BindAction(TEXT("Sprint"), IE_Released, this, &AMainPlayer::EndSprint);
 
+	// Damage/healing input
 	PlayerInputComponent->BindAction(TEXT("Heal"), IE_Pressed, this, &AMainPlayer::StartHealing);
 	PlayerInputComponent->BindAction(TEXT("Damage"), IE_Pressed, this, &AMainPlayer::StartDamage);
+
+	// Melee input
+	PlayerInputComponent->BindAction(TEXT("Melee"), IE_Pressed, this, &AMainPlayer::Melee);
 }
 
 void AMainPlayer::MoveForward(float AxisValue) 
@@ -113,34 +120,39 @@ void AMainPlayer::EndCrouch()
 
 void AMainPlayer::StartDamage() 
 {
-	TakeDamage(0.02f);
+	TakeDamage(0.25f);
 }
 
 void AMainPlayer::TakeDamage(float DamageAmount) 
 {
 	UE_LOG(LogTemp, Warning, TEXT("We are taking Damage for %f points."), DamageAmount);
 	PlayerHealth -= DamageAmount;
-	UE_LOG(LogTemp, Warning, TEXT("Health: %f"), PlayerHealth);
-	
+
 	if (PlayerHealth < 0.f)
 	{
 		PlayerHealth = 0.f;
 	}
+	UE_LOG(LogTemp, Warning, TEXT("Health: %f"), PlayerHealth);
 }
 
 void AMainPlayer::StartHealing() 
 {
-	Heal(0.02f);
+	Heal(0.25f);
 }
 
 void AMainPlayer::Heal(float HealAmount) 
 {
 	UE_LOG(LogTemp, Warning, TEXT("We are Healing for %f points."), HealAmount);
 	PlayerHealth += HealAmount;
-	UE_LOG(LogTemp, Warning, TEXT("Health: %f"), PlayerHealth);
 
 	if (PlayerHealth > 1.f)
 	{
 		PlayerHealth = 1.f;
 	}
+	UE_LOG(LogTemp, Warning, TEXT("Health: %f"), PlayerHealth);
+}
+
+void AMainPlayer::Melee()
+{
+	bHasPunched = true;
 }

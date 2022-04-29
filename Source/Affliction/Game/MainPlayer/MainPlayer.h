@@ -35,19 +35,28 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Components")
 	UCameraComponent* Camera;
 
-	// Amount of Health the MainPlayer currently has
+	// Define Player Health
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Health")
 	float PlayerHealth;
 
+	// Define combat variables
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attack")
+	bool bHasPunched;
+
+
+	// Damage/Healing functions
 	UFUNCTION()
 	void StartDamage();
 	UFUNCTION()
 	void TakeDamage(float DamageAmount);
-
 	UFUNCTION()
 	void StartHealing();
 	UFUNCTION()
 	void Heal(float HealAmount);
+
+	// Combat function
+	UFUNCTION()
+	void Melee();
 
 private:
 
